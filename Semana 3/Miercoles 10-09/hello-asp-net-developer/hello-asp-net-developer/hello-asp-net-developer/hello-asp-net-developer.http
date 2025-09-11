@@ -1,0 +1,6 @@
+@hello_asp_net_developer_HostAddress = http://localhost:5281
+
+GET {{hello_asp_net_developer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
