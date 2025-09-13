@@ -1,18 +1,15 @@
 {
   "name": "hello-vue-developer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "description": "A Hello Developer project for Vue.js",
-  "author" : "Web Application Development Team",
+  "author": "Web Application Development Team",
   "license": "MIT",
   "dependencies": {
     "vue": "^3.5.18"
