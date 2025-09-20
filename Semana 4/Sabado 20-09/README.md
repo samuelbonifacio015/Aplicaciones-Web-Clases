@@ -5,3 +5,4 @@
 #### npm install primeflex
 #### npm install vue-i18n
 #### npm install primeuix/themes
+#### npm install axios  
