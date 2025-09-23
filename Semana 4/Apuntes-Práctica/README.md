@@ -149,10 +149,10 @@ Crear carpeta **News** *(Según contexto)*
 │     └── layout.vue # Layout principal del boton
 │
 ├── App.vue # Principal app
-├── i18n.js # Traduccion 
+├── i18n.js # Traduccion (crear primero para empezar con el proyecto)
 ├── main.js # Monta la app
 
 ```
 
 #### La creación de este archivo corresponde al 22/09/25 (12:25PM) sujeto a futuras actualizaciónes
-** Actualizacion 23/09 (17:51PM) : especificar carpetas src y shared
+** Actualizacion 23/09 (17:51PM) : especificar carpetas src y shared **
