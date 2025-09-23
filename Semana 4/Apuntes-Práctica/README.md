@@ -117,8 +117,9 @@ Crear carpeta **News** *(Según contexto)*
 ### Organización de carpetas.
 
 ```
+|📂 src/
 │
-├── 📂 news/ # Carpeta principal
+├── 📂 news/ # Carpeta principal 
 │ ├── 📂 application/ # Aplicacion
 │  └── news.store.js/ # JavaScript para funcionalidad de la app (LoadSources) 
 │
@@ -137,7 +138,7 @@ Crear carpeta **News** *(Según contexto)*
 │     └── source-item.vue  # Muestra los sources desde la API (usa article.entity.js)
 │     └── source-list.vue  # Muestra una lista desde la api (usa source.entity.js)
 │
-├── 📂 shared/ # Recurso común a todo el proyecto.
+├── 📂 shared/ # Recurso común a todo el proyecto (esto va fuera de news).
 │ ├── 📂 infraestructure/ # Assembler
 │     └── logo-api.js/ 
 │
@@ -154,3 +155,4 @@ Crear carpeta **News** *(Según contexto)*
 ```
 
 #### La creación de este archivo corresponde al 22/09/25 (12:25PM) sujeto a futuras actualizaciónes
+** Actualizacion 23/09 (17:51PM) : especificar carpetas src y shared
