@@ -10,6 +10,12 @@
 
 Package.json -> instalación de dependencias
 
+Lista de dependencias:
+
+    "axios": "^1.12.2",
+    "vue": "^3.5.18",
+    "vue-i18n": "^11.1.12"
+
 ## Paso 2:
 
 ### Setup de ENV.
@@ -161,5 +167,26 @@ Crear carpeta **News** *(Según contexto)*
 ```
 
 #### La creación de este archivo corresponde al 22/09/25 (12:25PM) sujeto a futuras actualizaciónes
-** Actualizacion 23/09 (17:51PM) : especificar carpetas src y shared **
+**Actualizacion 23/09 (17:51PM) : especificar carpetas src y shared**
+
+## Paso 7:
+
+### Crear i18n.js
+
+Archivo importantísimo para el cambio de idiomas
+
+```js
+import en from './locales/en.json';
+import es from './locales/es.json';
+import {createI18n} from "vue-i18n";
+
+const i18n = createI18n({
+    legacy: false,
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages: { en, es }
+});
+
+export default i18n;
+```
 
