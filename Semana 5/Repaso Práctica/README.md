@@ -190,3 +190,81 @@ const i18n = createI18n({
 export default i18n;
 ```
 
+## Paso 8:
+
+### Crear entidades en domain/model
+
+Crear las entidades como se muestra:
+```
+│ ├── 📂 domain/ # Bounded Context Domain
+│  └── 📂 model/ # Modelos o Entidades
+│     └── article.entity.js # Entidad para los detalles de la API (ejemplo: año, mes, dia)
+│     └── source.entity.js/ # Entidad para los detalles específicos (ejemplo: nombre, url, descripcion)
+```
+
+**Ejemplo**:
+```js
+export class Source {
+    constructor( { id, name, country, officialSite } ) {
+        this.id = id;
+        this.name = name;
+        this.officialSite = officialSite;
+        this.country = country
+            ? {
+            name: country.name,
+            code: country.code,
+            timezone: country.timezone,
+        }
+        :null;
+    }
+}
+```
+
+```js
+import {Source} from '@/shows/domain/model/source.entity.js';
+
+export class Show {
+    constructor({
+      id,
+      url,
+    }) {
+      this.id = id;
+      this.url = url;
+    }
+}
+```
+
+***Importante adaptar lo necesario a los datos de la API***
+
+## Paso 9:
+
+### Crear context-api.js
+
+En este paso crearemos la instancia principal para acceder a la API usando axios como backend para Vue.
+
+**Ejemplo**:
+
+```js
+import axios from "axios";
+
+const showApiUrl = import.meta.env.VITE_SHOWS_API_URL;
+const showsEndpoint = import.meta.env.VITE_SHOWS_ENDPOINT_PATH;
+const showsHeadlinesEndpoint = import.meta.env.VITE_SHOWS_HEADLINES_ENDPOINT_PATH;
+
+const http = axios.create({
+    baseURL: showsEndpoint
+})
+
+export class ShowsApi {
+    getSources() {
+        return http.get(`${showsEndpoint}`);
+    }
+
+    getShowsForSourceId(sourceId) {
+        return http.get(showsHeadlinesEndpoint, {params: {sources: sourceId}});
+    }
+}
+```
+
+### > La creación de este archivo corresponde al 22/09/25 (12:25PM) sujeto a futuras actualizaciónes
+**Actualizacion 23/09 (22:45PM) : pasos 8 y 9 (avance)**
