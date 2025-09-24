@@ -268,3 +268,32 @@ export class ShowsApi {
 
 ### > La creación de este archivo corresponde al 22/09/25 (12:25PM) sujeto a futuras actualizaciónes
 **Actualizacion 23/09 (22:45PM) : pasos 8 y 9 (avance)**
+
+## Paso 10:
+
+### Crear assemblers para entidades en domain/model
+
+*PD: Assembler es armador*
+
+Por ejemplo, si tenemos las entidades show y source, entonces nuestros archivos serán:
+
+### Ejemplo con entidades `Show` y `Source`:
+
+#### show.assembler.js
+- Convierte un recurso (un show de la API) en una entidad `Show`.
+- Maneja atributos como `id`, `name`, `image`, `genres`.
+- Si el show tiene un `source`, lo arma usando también un assembler.
+
+#### source.assembler.js
+- Convierte un recurso de la API en la entidad `Source`.
+- Se encarga de extraer la información del origen (ejemplo: canal, proveedor, etc).
+
+```js
+Importante usar: static toEntityFromResource(resource)
+return new Source
+return response.data.map(item => {
+  return this.toEntityFromResource(item.show);
+});
+```
+
+**Actualizacion 24/09 (12:20PM) : paso 10 (avance)**
