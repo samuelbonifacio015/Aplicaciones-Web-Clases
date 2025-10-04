@@ -1,0 +1,44 @@
+{
+  "categories": [
+    { "id": 1, "name": "JavaScript" },
+    { "id": 2, "name": "Vue"  },
+    { "id": 3, "name": "CSharp"  },
+    { "id": 4, "name": "ASP.NET"  }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to Programming",
+      "description": "Learn the basics of programming using Python.",
+      "instructor": "John Doe",
+      "duration": "6 weeks"
+    },
+    {
+      "id": 2,
+      "title": "Web Development",
+      "description": "Build modern web applications using HTML, CSS, and JavaScript.",
+      "instructor": "Jane Smith",
+      "duration": "8 weeks"
+    },
+    {
+      "id": 3,
+      "title": "Data Science",
+      "description": "Analyze and visualize data using Python and R.",
+      "instructor": "Alice Johnson",
+      "duration": "10 weeks"
+    },
+    {
+      "title": "Programming 2",
+      "description": "Learn the basics of programming using JAVA.",
+      "instructor": "John Doe",
+      "duration": "6 weeks",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "Power User",
+      "id": 2
+    }
+  ]
+}
