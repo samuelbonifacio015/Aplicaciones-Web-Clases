@@ -1,0 +1,166 @@
+{
+  "equipments": [
+    {
+      "id": 1,
+      "name": "Refrigeration Unit",
+      "costPerHour": 35.5,
+      "impactInStoreOperations": "TOTAL",
+      "defaultAction": "REPAIR"
+    },
+    {
+      "id": 2,
+      "name": "Checkout Scanner",
+      "costPerHour": 18,
+      "impactInStoreOperations": "PARTIAL",
+      "defaultAction": "REPLACE"
+    },
+    {
+      "id": 3,
+      "name": "Lighting System",
+      "costPerHour": 10,
+      "impactInStoreOperations": "NONE",
+      "defaultAction": "REPAIR"
+    },
+    {
+      "id": 4,
+      "name": "Inventory Robot",
+      "costPerHour": 40,
+      "impactInStoreOperations": "PARTIAL",
+      "defaultAction": "REPAIR"
+    },
+    {
+      "id": 5,
+      "name": "POS Terminal",
+      "costPerHour": 25,
+      "impactInStoreOperations": "TOTAL",
+      "defaultAction": "REPLACE"
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "equipmentId": 1,
+      "issueType": "NO_OPERATION",
+      "registeredAt": "2025-10-14T09:15:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": 2,
+      "equipmentId": 2,
+      "issueType": "WRONG_OPERATION",
+      "registeredAt": "2025-10-13T08:45:00Z",
+      "status": "CLOSED"
+    },
+    {
+      "id": 3,
+      "equipmentId": 3,
+      "issueType": "SLOW_OPERATION",
+      "registeredAt": "2025-10-14T10:00:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": 4,
+      "equipmentId": 4,
+      "issueType": "NO_OPERATION",
+      "registeredAt": "2025-10-12T11:30:00Z",
+      "status": "OPEN"
+    },
+    {
+      "id": 5,
+      "equipmentId": 5,
+      "issueType": "SLOW_OPERATION",
+      "registeredAt": "2025-10-11T14:20:00Z",
+      "status": "CLOSED"
+    },
+    {
+      "equipmentId": 3,
+      "issueType": "NO_OPERATION",
+      "registeredAt": "2025-10-18T13:45:39.155Z",
+      "status": "OPEN",
+      "apiId": "v1",
+      "id": 6
+    },
+    {
+      "equipmentId": 4,
+      "issueType": "WRONG_OPERATION",
+      "registeredAt": "2025-10-18T14:13:11.980Z",
+      "status": "OPEN",
+      "apiId": "v1",
+      "id": 7
+    }
+  ],
+  "service-orders": [
+    {
+      "id": 1,
+      "equipmentId": 1,
+      "issueId": 1,
+      "neededAction": "REPAIR",
+      "priority": "HIGH",
+      "registeredAt": "2025-10-14T09:20:00Z"
+    },
+    {
+      "id": 2,
+      "equipmentId": 2,
+      "issueId": 2,
+      "neededAction": "REPLACE",
+      "priority": "NORMAL",
+      "registeredAt": "2025-10-13T08:50:00Z"
+    },
+    {
+      "id": 3,
+      "equipmentId": 3,
+      "issueId": 3,
+      "neededAction": "REPAIR",
+      "priority": "NORMAL",
+      "registeredAt": "2025-10-14T10:10:00Z"
+    },
+    {
+      "id": 4,
+      "equipmentId": 4,
+      "issueId": 4,
+      "neededAction": "REPAIR",
+      "priority": "HIGH",
+      "registeredAt": "2025-10-12T11:40:00Z"
+    },
+    {
+      "id": 5,
+      "equipmentId": 5,
+      "issueId": 5,
+      "neededAction": "REPLACE",
+      "priority": "NORMAL",
+      "registeredAt": "2025-10-11T14:25:00Z"
+    },
+    {
+      "equipmentId": 3,
+      "issueId": {
+        "equipmentId": 3,
+        "issueType": "NO_OPERATION",
+        "registeredAt": "2025-10-18T13:45:39.155Z",
+        "status": "OPEN",
+        "apiId": "v1",
+        "id": 6
+      },
+      "neededAction": "REPAIR",
+      "priority": "LOW",
+      "registeredAt": "2025-10-18T13:45:39.179Z",
+      "apiId": "v1",
+      "id": 6
+    },
+    {
+      "equipmentId": 4,
+      "issueId": {
+        "equipmentId": 4,
+        "issueType": "WRONG_OPERATION",
+        "registeredAt": "2025-10-18T14:13:11.980Z",
+        "status": "OPEN",
+        "apiId": "v1",
+        "id": 7
+      },
+      "neededAction": "REPAIR",
+      "priority": "NORMAL",
+      "registeredAt": "2025-10-18T14:13:11.992Z",
+      "apiId": "v1",
+      "id": 7
+    }
+  ]
+}

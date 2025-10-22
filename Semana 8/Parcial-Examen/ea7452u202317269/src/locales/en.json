@@ -1,0 +1,29 @@
+{
+  "option": {
+    "home": "Home",
+    "new-issues": "New Issues"
+  },
+  "authoring-phrase": {
+    "intro": "Made with",
+    "use": "using",
+    "author": "by Samuel Jesus Bonifacio Jaramillo - u202312769"
+  },
+    "home": {
+      "title": "Welcome",
+      "content": "We aim to be the most efficient and sustainable retail company in the world."
+    },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path {unavailable-route} is not available.",
+    "go-home": "Go Home"
+  },
+    "new-issues": {
+        "title": "New Issues",
+        "table": {
+        "equipment-id": "Equipment ID",
+        "issue-type": "Issue Type",
+        "registered-at": "Registered At",
+        "status": "Status"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "option": {
+    "home": "Inicio",
+    "new-issues": "Nuevos Problemas"
+  },
+  "authoring-phrase": {
+    "intro": "Desarrollado",
+    "use": "utilizando",
+    "author": "por Samuel Jesus Bonifacio Jaramillo - u202312769"
+  },
+  "home": {
+    "title": "Bienvenido",
+    "content": "Nuestro objetivo es ser la empresa minorista más eficiente y sostenible del mundo."
+  },
+  "page-not-found": {
+    "title": "Página no encontrada",
+    "content": "La ruta {unavailable-route} no está disponible.",
+    "go-home": "Ir al Inicio"
+  },
+  "new-issues": {
+    "title": "Nuevos Problemas",
+    "table": {
+      "equipment-id": "ID del Equipo",
+      "issue-type": "Tipo de Problema",
+      "registered-at": "Registrado En",
+      "status": "Estado"
+    }
+  }
+}
