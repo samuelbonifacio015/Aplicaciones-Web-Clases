@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CWggEVnQuTz0KTuWvnRclZuzKPkum/K1w6GuSnPnd4A=",
+  "Source": "CatchUpPlatform.API",
+  "BasePath": "_content/CatchUpPlatform.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
