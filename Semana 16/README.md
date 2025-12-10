@@ -58,3 +58,38 @@ builder.Services.AddSwaggerGen(options =>
     options.EnableAnnotations();
 });
 ```
+---
+
+### Previas: Comentarios y especificación de endpoint
+
+> Declarando salida y entrada de data en Swagger
+
+```c#
+[Authorize]
+[ApiController]
+[Route("api/v1/[controller]")]
+[Produces(MediaTypeNames.Application.Json)]
+[SwaggerTag("Available Authentication endpoints")]
+```
+---
+
+### Previas: Respuesta de Swagger en Controlador
+
+```c#
+[HttpPost("sign-in")]
+    [AllowAnonymous]
+    [SwaggerOperation(
+        Summary = "Sign in",
+        Description = "Sign in a user",
+        OperationId = "SignIn")]
+    [SwaggerResponse(StatusCodes.Status200OK, "The user was authenticated", typeof(AuthenticatedUserResource))]
+    public async Task<IActionResult> SignIn([FromBody] SignInResource signInResource)
+    {
+        var signInCommand = SignInCommandFromResourceAssembler.ToCommandFromResource(signInResource);
+        var authenticatedUser = await userCommandService.Handle(signInCommand);
+        var resource =
+            AuthenticatedUserResourceFromEntityAssembler.ToResourceFromEntity(authenticatedUser.user,
+                authenticatedUser.token);
+        return Ok(resource);
+    }
+```
